@@ -1,7 +1,7 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
-namespace BulkyWeb.Models
+namespace BulkyWebRazor_Temp.Models
 {
     public class Category
     {
@@ -11,7 +11,7 @@ namespace BulkyWeb.Models
         [Required]
         [MaxLength(30)]
         [DisplayName("Category Name")]
-        public required string strCategoryName { get; set; }
+        public string strCategoryName { get; set; }
 
         [DisplayName("Display Order")]
         [Range(1, 100, ErrorMessage = "Display Order must be between 1-100.")]
